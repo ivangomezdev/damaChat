@@ -1,0 +1,15 @@
+{
+  "builds": [
+    {
+      "src": "client/src/index.html",
+      "use": "@vercel/static",
+      "buildCommand": "npm run build" 
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/client/dist/index.html" 
+    }
+  ]
+}
